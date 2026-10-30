@@ -69,7 +69,7 @@ export const AddEditPagePopup = forwardRef(({ darkMode, onNestedPopoverOpenChang
   const currentPageId = useStore((state) => state.modules[moduleId].currentPageId);
   const setCurrentPageHandle = useStore((state) => state.setCurrentPageHandle);
   const openPageEditPopover = useStore((state) => state.openPageEditPopover);
-  const appId = useStore((state) => state.appStore.modules[moduleId].app.homePageId);
+  const appId = useStore((state) => state.appStore.modules[moduleId].app.appId ?? state.appStore.modules[moduleId].app.id);
 
   const [page, setPage] = useState(editingPage || props?.page);
 
