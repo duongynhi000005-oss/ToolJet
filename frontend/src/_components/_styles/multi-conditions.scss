@@ -19,6 +19,12 @@
   border-radius: 0 !important;
 }
 
+.fields-container .field,
+.fields-container .codehinter-plugins {
+  min-width: 0;
+  width: 100%;
+}
+
 .fields-container .cm-scroller,
 .fields-container .code-hinter-wrapper,
 .fields-container .code-editor-basic-wrapper,
